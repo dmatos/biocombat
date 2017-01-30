@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>$(function(){$("#header").load("/static/html/header.html"); })</script><div id="header"></div>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/createCard.css" %}">
+</head>
+
+<body>
+<h2>Create a new card</h2>
+
+<form action="/biocombat/removeCard/" method="post">
+    {% csrf_token %}
+    Card name with hyphen: <input type="text" name="cardName">
+    <input type="submit" value="Remove Card" />  
+</form>
+
+
+</body>
+
+</html>

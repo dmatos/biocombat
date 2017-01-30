@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>$(function(){$("#header").load("/static/html/header.html"); })</script><div id="header"></div>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/createCard.css" %}">
+</head>
+
+<body>
+<h2>Create a new card</h2>
+
+<form action="/biocombat/uploadCard/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if errors %}
+    	<ul>
+    	{% for error in errors %}
+    	<li> {{error}} </li>
+    	{% endfor %}
+    	</ul>
+    {% endif %}
+    <p>
+    {{ form.name.label }}    
+    </p>    
+    <p>
+    {{ form.name }}    
+    </p> 
+    <p>
+    {{ form.cardType.label }}    
+    </p> 
+    <p>
+    {{ form.cardType }}	
+    </p>    
+     
+    <p> 
+    {{ form.hp.label }}
+    </p>   
+    <p class='valores-numericos'>
+    {{ form.hp }} 
+    </p>
+     <p>
+    {{ form.atk.label }}
+    </p>
+    <p class='valores-numericos'>
+    {{form.atk}}
+    </p>
+    <p>
+    {{ form.structure.label }}
+    </p>
+    <p>
+    {{ form.structure }}
+    </p>
+    <p>
+    {{ form.image.label }}
+    </p>
+    <p>
+    {{form.image }}
+    </p>
+    <p>
+    {{ form.info.label }}
+    </p>
+    <p>    
+    {{form.info}}
+    </p>
+    
+    <input type="submit" value="Create Card" />  
+</form>
+
+
+</body>
+
+</html>

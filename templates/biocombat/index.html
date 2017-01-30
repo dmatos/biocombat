@@ -1,0 +1,17 @@
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>$(function(){$("#header").load("/static/html/header.html"); })</script><div id="header"></div>
+
+</head>
+
+<body>
+
+{% for cardName, path in cards.items %}	
+	<a href="/biocombat/openCard/{{cardName}}"> <img src="/static/{{path}}" width='160px' height='160px' border='2px solid black'> </img> </a> 
+{% endfor %}
+
+</body>
+
+</html>

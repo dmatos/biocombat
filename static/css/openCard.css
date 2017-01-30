@@ -1,0 +1,60 @@
+@media screen{
+  .noPrint{ display: block; }
+  .yesPrint{ display: block !important; }
+}
+
+@media print{
+  .noPrint{ display: none; }
+  .yesPrint{ 
+    display: block !important;}
+}
+
+#card {
+    width: 6cm;
+    height: 9cm;   
+    border: 2px solid black;
+}
+
+.cardTable {	
+	border:'2px solid black';
+	width: 6cm;
+	height: 9cm;
+	table-layout:fixed;
+}
+
+
+#ataque {
+	align: right;
+	text-align: right;
+	font-weight: bold;
+}
+
+#energiaVital {
+	align: right;
+	text-align: right;
+	font-weight: bold;
+}
+
+#nome {	
+	font-size: 8px;
+	text-align: center;
+	word-wrap:break-word;
+	font-weight: bold;
+}
+
+#info {
+	font-size:8px;
+	text-align: left;
+	word-wrap:break-word;
+}
+
+#imagem {
+	align: middle;
+	width: 4cm;
+	height: 4cm;
+	border: 1px solid black;
+}
+
+#imagem-td {	
+	text-align: center;
+}

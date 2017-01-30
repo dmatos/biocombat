@@ -1,0 +1,22 @@
+2016/0819-05:02:33: AttributeError: <type 'exceptions.AttributeError'>2016/0819-05:02:33: 'CardForm' object has no attribute 'name'2016/0819-05:04:59: AttributeError: <type 'exceptions.AttributeError'>2016/0819-05:04:59: 'CardForm' object has no attribute 'name'2016/0819-05:15:08: AttributeError: <type 'exceptions.AttributeError'>2016/0819-05:15:08: 'CardForm' object has no attribute 'name'2016/0819-05:31:13: AttributeError: <type 'exceptions.AttributeError'>2016/0819-05:31:13: 'CardForm' object has no attribute 'name'2016/0819-05:36:41: AttributeError: <type 'exceptions.AttributeError'>2016/0819-05:36:41: 'CardForm' object has no attribute 'name'2016/0819-05:49:48: AttributeError: (<type 'exceptions.AttributeError'>, AttributeError("'CardForm' object has no attribute 'name'",), <traceback object at 0x7fdf110b9440>)
+2016/0819-05:49:48: 'CardForm' object has no attribute 'name'
+2016/0819-05:50:20: AttributeError: (<type 'exceptions.AttributeError'>, AttributeError("'CardForm' object has no attribute 'name'",), <traceback object at 0x7fdf110b9368>)
+2016/0819-05:50:20: 'CardForm' object has no attribute 'name'
+2016/0819-05:50:52: AttributeError: (<type 'exceptions.AttributeError'>, AttributeError("'CardForm' object has no attribute 'name'",), <traceback object at 0x7fdf110c2b48>)
+2016/0819-05:50:52: 'CardForm' object has no attribute 'name'
+2016/0819-05:53:35: AttributeError: (<type 'exceptions.AttributeError'>, AttributeError("'CardForm' object has no attribute 'structure'",), <traceback object at 0x7ff4c107db48>)
+2016/0819-06:00:25: Unexpected error:(<type 'exceptions.OSError'>, OSError(13, 'Permission denied'), <traceback object at 0x7f9b0d08ef80>)
+2016/0819-06:01:56: Unexpected error:(<class 'django.db.utils.OperationalError'>, OperationalError('no such table: biocombat_biocard',), <traceback object at 0x7f6fb108e0e0>)
+2016/0819-06:06:30: Unexpected error:(<class 'django.db.utils.OperationalError'>, OperationalError('no such table: biocombat_biocard',), <traceback object at 0x7fb4dd080d88>)
+2016/0819-06:18:17: Unexpected error:(<class 'django.db.utils.OperationalError'>, OperationalError('attempt to write a readonly database',), <traceback object at 0x7f8dcd073878>)
+2016/0819-06:20:53: Unexpected error:(<class 'django.db.utils.OperationalError'>, OperationalError('unable to open database file',), <traceback object at 0x7ffb49072950>)
+2016/0819-06:23:59: Unexpected error:(<class 'django.db.utils.OperationalError'>, OperationalError('unable to open database file',), <traceback object at 0x7fdde9080908>)
+2016/0819-06:29:30: Unexpected error:(<class 'django.db.utils.OperationalError'>, OperationalError('unable to open database file',), <traceback object at 0x7f13910739e0>)
+2016/1230-03:15:26: Unexpected error:(<type 'exceptions.UnicodeEncodeError'>, UnicodeEncodeError('ascii', u'/var/www/biocombat/static/cards/1_concentra\xe7\xe3o.jpg', 43, 45, 'ordinal not in range(128)'), <traceback object at 0x7f606c088368>)
+2016/1230-03:15:30: Unexpected error:(<type 'exceptions.UnicodeEncodeError'>, UnicodeEncodeError('ascii', u'/var/www/biocombat/static/cards/1_concentra\xe7\xe3o.jpg', 43, 45, 'ordinal not in range(128)'), <traceback object at 0x7f606c07c7a0>)
+2016/1230-03:15:46: Unexpected error:(<type 'exceptions.UnicodeEncodeError'>, UnicodeEncodeError('ascii', u'/var/www/biocombat/static/cards/1_concentra\xe7\xe3o.jpg', 43, 45, 'ordinal not in range(128)'), <traceback object at 0x7f606c07c7a0>)
+2016/1230-03:16:16: Unexpected error:(<type 'exceptions.UnicodeEncodeError'>, UnicodeEncodeError('ascii', u'/var/www/biocombat/static/cards/1_concentra\xe7\xe3o.jpg', 43, 45, 'ordinal not in range(128)'), <traceback object at 0x7f606c08c290>)
+2017/0111-13:44:39: Unexpected error:(<class 'django.db.utils.IntegrityError'>, IntegrityError('column name is not unique',), <traceback object at 0x7fb6c10620e0>)
+2017/0119-17:26:26: Unexpected error:(<class 'django.db.utils.IntegrityError'>, IntegrityError('column name is not unique',), <traceback object at 0x7f1d89057ea8>)
+2017/0119-17:26:43: Unexpected error:(<class 'django.db.utils.IntegrityError'>, IntegrityError('column name is not unique',), <traceback object at 0x7f1d80160d88>)
+2017/0119-17:28:41: Unexpected error:(<class 'django.db.utils.IntegrityError'>, IntegrityError('column name is not unique',), <traceback object at 0x7f1d80160f38>)

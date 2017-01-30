@@ -1,0 +1,21 @@
+h1 {
+	padding: 20px;
+}
+
+h2 {
+	padding: 20px;
+}
+
+form {
+	font-size:20px;
+	text-align:left;
+	padding: 20px;
+}
+
+form input{
+	width: 400px;
+}
+
+li {
+	color: red;
+}

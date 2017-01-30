@@ -1,0 +1,55 @@
+<html>
+
+<head>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/openCard.css" %}">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>$(function(){$("#header").load("/static/html/header.html"); })</script><div class='noPrint' id="header"></div>
+
+</head>
+
+<body>
+
+{% csrf_token %}
+{% if errors %}
+	<ul>
+	{% for error in errors %}
+	<li> {{error}} </li>
+	{% endfor %}
+	</ul>
+{% else  %}
+
+<h2> Carta: {{card_name}} </h2>
+
+<div id="card">
+<table border='2px solid black' bgcolor='{{ color }}' class="cardTable" class="yesPrint">	
+	<tr id='energiaVital'> 
+		<td colspan="2"> {{ card.hp }} </td> 
+	</tr>		
+	<tr id='nome'> 
+		<td celpadding='50px' bgcolor="#FFFFFF"> {{ card_name }}</td> 
+		<td bgcolor="#FFFFFF">{{ card.structure }}</td>
+	</tr>		
+	<tr>	
+		<td id='imagem-td' colspan="2"  > <img id='imagem' src='/static/{{ path }}'> </td>				
+	</tr>		
+	<tr id='info' bgcolor="#FFFFFF"> 
+		<td  colspan="2"> {{ card.info }} </td>
+	</tr>	
+	<tr id='ataque'>
+		<td colspan="2"> {{ card.atk }} </td>
+    </tr>
+	
+</table>
+</div>
+
+</br>
+<input class='noPrint' type="button" value="Print Card" width="6cm" onclick="window.print();"/>
+</br>
+
+    <p>(* Check Print Background Colors and Images on printer setup)</p>   
+{% endif %}
+
+</body>
+
+</html>
