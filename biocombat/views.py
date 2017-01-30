@@ -168,7 +168,9 @@ def index(request):
         #print filename
         ext = filename.split('.')[-1]
         fn = filename[0:-(len(ext)+1)]
-        cartasCriadas[fn] = os.path.join('cards',filename)
+        card = BioCard.objects.get(pk=filename)
+        cartasCriadas[fn] = (card, os.path.join('cards',filename))
+        
     
     t = loader.get_template('biocombat/index.html')
     c = Context({'cards': cartasCriadas})
