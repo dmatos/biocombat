@@ -8,8 +8,8 @@
 
 <body>
 
-{% for cardname, card, path in cards.items %}	
-	<a href="/biocombat/openCard/{{cardname}}"> <img title={{card.name}} src="/static/{{path}}" width='160px' height='160px' border='2px solid black'> </img> </a> 
+{% for cardname, path in cards.items %}	
+	<a href="/biocombat/openCard/{{cardname}}"> <img title={{cardname}} src="/static/{{path}}" width='160px' height='160px' border='2px solid black'> </img> </a> 
 {% endfor %}
 
 </body>
