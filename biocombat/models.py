@@ -31,7 +31,7 @@ class BioCard(models.Model):
     cardType = models.IntegerField(choices=CHOICES)   
     
     def __unicode__(self):
-        return self.nome
+        return self.name
     
     @staticmethod
     def path_to_images():
