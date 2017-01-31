@@ -168,7 +168,7 @@ def index(request):
         #print filename
         ext = filename.split('.')[-1]
         fn = filename[0:-(len(ext)+1)]
-        card = BioCard.objects.get(pk=filename)
+        card = BioCard.objects.get(pk=fn)
         cartasCriadas[fn] = os.path.join('cards',filename)
         
     
